@@ -7,9 +7,9 @@ const Contact = () => {
       <h2 className="section__title">Get in Touch</h2>
       <span className="section__subtitle">Contact Me</span>
       <div className="contact__container container grid">
-        <div className="contact__content">
+        {/* <div className="contact__content">
           <h3 className="contact__title">Talk to Me</h3>
-        </div>
+        </div> */}
         <div className="contact__info">
           <div className="contact__card">
             <i className="bx bx-mail-send contact__card-icon"></i>
@@ -21,16 +21,16 @@ const Contact = () => {
               href="mailto:prasadahadbe313@gmail.com"
               className="contact__button"
             >
-              Write me
+              Write an Email
               <i className="bx bx-right-arrow-alt contact__button-icon"></i>
             </a>
           </div>
           <div className="contact__card">
             <i className="bx bxl-whatsapp contact__card-icon"></i>
             <h3 className="contact__card-title">WhatsApp/Call</h3>
-            <span className="contact__card-data">+919623370313</span>
+            <span className="contact__card-data">+91 9623370313</span>
             <a href="tel:+919623370313" className="contact__button">
-              Reach Out
+              Get in Touch
               <i className="bx bx-right-arrow-alt contact__button-icon"></i>
             </a>
           </div>
@@ -42,7 +42,7 @@ const Contact = () => {
               href="https://www.linkedin.com/in/prasad-hadbe-7907b316b/"
               className="contact__button"
             >
-              Add me
+              Connect with Me
               <i className="bx bx-right-arrow-alt contact__button-icon"></i>
             </a>
           </div>

@@ -15,13 +15,14 @@ const Header = () => {
     if (this.scrollY >= 80) header.classList.add("scroll-header");
     else header.classList.remove("scroll-header");
   });
+
   const [Toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
   return (
     <header className="header">
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
-          Hadbe
+          Prasad
         </a>
 
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>

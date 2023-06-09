@@ -3,13 +3,21 @@ import "./qualification.css";
 
 const Qualification = () => {
   const [toggleState, setToggleState] = useState(1);
+  const [hover, setHover] = useState(false);
+  const onHover = () => {
+    setHover(true);
+  };
+
+  const onLeave = () => {
+    setHover(false);
+  };
   const toggleTab = (index) => {
     setToggleState(index);
   };
   return (
     <section className="qualification section">
       <h2 className="section__title">Qualification</h2>
-      <span className="section__subtitle">My journey</span>
+      <span className="section__subtitle">My Journey</span>
       <div className="qualification__container container">
         <div className="qualification__tabs">
           <div
@@ -68,7 +76,17 @@ const Qualification = () => {
 
               <div>
                 <h3 className="qualification__title">12th SSC</h3>
-                <span className="qualification__subtitle">VCACS - Pune</span>
+                <span
+                  onMouseEnter={onHover}
+                  onMouseLeave={onLeave}
+                  role="button"
+                  tabIndex="-3"
+                >
+                  {hover
+                    ? "Vishwakarma College of Arts, Commerce & Science"
+                    : "VCACS - Pune"}
+                </span>
+                {/* <span className="qualification__subtitle">VCACS - Pune</span> */}
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt"></i> 2018
                 </div>

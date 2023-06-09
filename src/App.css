@@ -41,6 +41,48 @@
   --z-model: 1000;
 }
 
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --header-heigh: 3rem;
+    --darkreader-bg--hue: 0;
+    --darkreader-text--hue: 0;
+    --darkreader-bg--sat: 0%;
+    --darkreader-text--sat: 0%;
+    --darkreader-bg--title-color: #262a2b;
+    --darkreader-text--title-color: #c8c3bc;
+    --darkreader-bg--title-color-dark: #000000;
+    --darkreader-text--title-color-dark: #e8e6e3;
+    --darkreader-bg--text-color: #585f63;
+    --darkreader-text--text-color: #9e9689;
+    --darkreader-bg--body-color: #1e2021;
+    --darkreader-bg--container-color: #181a1b;
+    --darkreader-text--container-color: #e8e6e3;
+    --body-font: "Poppins", sans-serif;
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+    --tiny-font-size: 0.625rem;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --mb-0-25: 0.25rem;
+    --mb-0-5: 0.5rem;
+    --mb-0-75: 0.75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-model: 1000;
+  }
+} */
+
 @media screen and (max-width: 992px) {
   :root {
     --big-font-size: 2.75rem;
