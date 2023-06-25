@@ -28,7 +28,7 @@ const Footer = () => {
             rel="noreferrer"
             target="_blank"
           >
-            <i class="bx bxl-instagram"></i>
+            <i className="bx bxl-instagram"></i>
           </a>
           {/* <a href="" className="home__social-icon" target="_blank"></a> */}
           <a
@@ -37,7 +37,7 @@ const Footer = () => {
             rel="noreferrer"
             target="_blank"
           >
-            <i class="bx bxl-linkedin"></i>
+            <i className="bx bxl-linkedin"></i>
           </a>
           {/* <a href="#" className="home__social-icon" target="_blank"></a> */}
           <a
@@ -46,7 +46,7 @@ const Footer = () => {
             rel="noreferrer"
             target="_blank"
           >
-            <i class="bx bxl-github"></i>
+            <i className="bx bxl-github"></i>
           </a>
         </div>
         <span className="footer__copy">

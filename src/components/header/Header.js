@@ -1,23 +1,27 @@
 import React, { useState } from "react";
 import "./header.css";
 
-const Header = () => {
-  // if (window.performance) {
-  //   if (performance.getEntriesByType === 1) {
-  //     alert("This page is reloaded");
-  //   } else {
-  //     alert("This page is not reloaded");
-  //   }
-  // }
-
+const Header = ({ activeSection }) => {
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
     if (this.scrollY >= 80) header.classList.add("scroll-header");
     else header.classList.remove("scroll-header");
   });
 
+  // const li = document.querySelectorAll(".nav__item");
+  // const sec = document.querySelectorAll("section");
+
+  // function activeMenu() {
+  //   let len = sec.length;
+  //   while (--len && window.scrollY + 97 < sec[len].offsetTop) {}
+  //   li.forEach((ltx) => ltx.classList.remove("active"));
+  //   li[len].classList.add("active");
+  // }
+  // activeMenu();
+  // window.addEventListener("scroll", activeMenu);
+
   const [Toggle, showMenu] = useState(false);
-  const [activeNav, setActiveNav] = useState("#home");
+  // const [activeNav, setActiveNav] = useState(activeSection);
   return (
     <header className="header">
       <nav className="nav container">
@@ -30,9 +34,11 @@ const Header = () => {
             <li className="nav__item">
               <a
                 href="#home"
-                onClick={() => setActiveNav("#home")}
+                // onClick={() => setActiveNav("#home")}
                 className={
-                  activeNav === "#home" ? "nav__link active-link" : "nav__link"
+                  activeSection === "home"
+                    ? "nav__link active-link nav__underline"
+                    : "nav__link"
                 }
               >
                 <i className="uil uil-estate nav__icon"></i>
@@ -42,9 +48,11 @@ const Header = () => {
             <li className="nav__item">
               <a
                 href="#about"
-                onClick={() => setActiveNav("#about")}
+                // onClick={() => setActiveNav("#about")}
                 className={
-                  activeNav === "#about" ? "nav__link active-link" : "nav__link"
+                  activeSection === "about"
+                    ? "nav__link active-link nav__underline"
+                    : "nav__link"
                 }
               >
                 <i className="uil uil-user nav__icon"></i>
@@ -54,9 +62,9 @@ const Header = () => {
             <li className="nav__item">
               <a
                 href="#skills"
-                onClick={() => setActiveNav("#skills")}
+                // onClick={() => setActiveNav("#skills")}
                 className={
-                  activeNav === "#skills"
+                  activeSection === "skills"
                     ? "nav__link active-link"
                     : "nav__link"
                 }
@@ -74,9 +82,9 @@ const Header = () => {
             <li className="nav__item">
               <a
                 href="#portfolio"
-                onClick={() => setActiveNav("#portfolio")}
+                // onClick={() => setActiveNav("#portfolio")}
                 className={
-                  activeNav === "#portfolio"
+                  activeSection === "portfolio"
                     ? "nav__link active-link"
                     : "nav__link"
                 }
@@ -88,9 +96,9 @@ const Header = () => {
             <li className="nav__item">
               <a
                 href="#contact"
-                onClick={() => setActiveNav("#contact")}
+                // onClick={() => setActiveNav("#contact")}
                 className={
-                  activeNav === "#contact"
+                  activeSection === "contact"
                     ? "nav__link active-link"
                     : "nav__link"
                 }
@@ -106,7 +114,7 @@ const Header = () => {
           ></i>
         </div>
         <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
-          <i class="uil uil-apps"></i>
+          <i className="uil uil-apps"></i>
         </div>
       </nav>
     </header>
