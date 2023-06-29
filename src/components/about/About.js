@@ -14,12 +14,12 @@ const About = () => {
         <div className="about__data">
           <Info />
           <p className="about__description">
-            Frontend developer with a focus on web development, holding a B.Tech
-            degree and 7 months of professional experience. Committed to
-            creating visually appealing websites, delivering quality code, and
-            staying updated with the latest web technologies. A quick learner
-            and problem solver, I thrive in collaborative environments to build
-            innovative web projects.
+            Frontend developer with a focus on web and mobile application
+            development, holding a B.Tech degree and 2+ years of project
+            experience. Committed to creating visually appealing websites,
+            delivering quality code, and staying updated with the latest web
+            technologies. A quick learner and problem solver, I thrive in
+            collaborative environments to build innovative web projects.
           </p>
           <a download="" href={CV} className="button button--flex">
             Download CV
