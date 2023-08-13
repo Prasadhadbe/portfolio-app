@@ -4,11 +4,13 @@ const Data = () => {
   return (
     <div className="home__data">
       <h1 className="home__title">Prasad Hadbe 👋</h1>
-      <h3 className="home__subtitle">Front-End Enginner</h3>
+      <h3 className="home__subtitle">Software Enginner</h3>
       <p className="home__description">
-        Passionate frontend developer with a focus on web development. Committed
-        to creating visually appealing and user-friendly websites while
-        continuously learning and adapting to the latest technologies.{" "}
+        Passionate software engineer with a primary emphasis on web and mobile
+        application development. Committed to creating visually appealing and
+        user-friendly experiences across both platforms, while continuously
+        staying updated with the latest technologies and approaches in the
+        field.{" "}
       </p>
       <a href="#contact" className="button button--flex">
         Say Hello!
