@@ -108,23 +108,6 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
             </div>
-            {/* <div className="qualification__data">
-              <div></div>
-
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-              <div>
-                <h3 className="qualification__title">UX Expert</h3>
-                <span className="qualification__subtitle">
-                  Spain - Institute
-                </span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2017 - 2018
-                </div>
-              </div>
-            </div> */}
           </div>
           <div
             className={
@@ -145,8 +128,8 @@ const Qualification = () => {
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
-            </div>
-            {/* <div className="qualification__data">
+
+              {/* <div className="qualification__data">
               <div></div>
 
               <div>
@@ -176,6 +159,24 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
             </div> */}
+            </div>
+            <div className="qualification__data">
+              <div></div>
+
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+              <div>
+                <h3 className="qualification__title">Flutter Developer</h3>
+                <span className="qualification__subtitle">
+                  Quantime World - Pune
+                </span>
+                <div className="qualification__calendar">
+                  <i className="uil uil-calendar-alt"></i> Aug 2022 - Sep 2023
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
